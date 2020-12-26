@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -8,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.aboutme"
+        applicationId "com.example.colormyviews"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
@@ -29,9 +30,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-    buildFeatures {
-        dataBinding true
     }
 }
 
